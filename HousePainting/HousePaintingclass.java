@@ -41,13 +41,13 @@ public class HousePaintingclass {
  windowLength=in.nextInt();
  System.out.print("Please enter the amount of windows:");
  Windownumbers=in.nextInt();
- System.out.println("Please Enter the Prince per Squre Foot:");
+ System.out.println("Please Enter the cost per Squre Foot:");
  costperSqft=in.nextDouble();
  SqftwithoutPeak= Length * Width * 2;
  Totalwithpeak=  Length * Width + 1/2 * (Height-Length) * 2;
  DoorTotal= DoorLength * Doorwidth * numberofDoors;
  WindowsTotal= windowLength * windowWidth * Windownumbers;
- FinalSQ= SqftwithoutPeak + Totalwithpeak + DoorTotal - WindowsTotal;
+ FinalSQ= SqftwithoutPeak + Totalwithpeak - DoorTotal - WindowsTotal;
  Lastresult= FinalSQ * costperSqft;
  System.out.println("Total cost to paint the House:"+Lastresult);
  

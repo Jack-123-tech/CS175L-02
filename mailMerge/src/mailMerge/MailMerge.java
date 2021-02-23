@@ -22,15 +22,15 @@ public static void main(String[] args) {
 	enterhousenum=in.nextLine();
 	System.out.println(enterstreet);
 	enterstreet=in.nextLine();
-	ReplaceText1= ReplaceText1.replaceFirst("<firstname>",entername).replace ("<lastName>",enterLastname);
+	ReplaceText1= ReplaceText1.replace("<firstname>",entername).replace ("<lastName>",enterLastname);
 	
 	System.out.println(ReplaceText1);
 	
-	ReplaceText2=ReplaceText2.replaceFirst("<housenumber>",enterhousenum).replace("<street>",enterstreet);
+	ReplaceText2=ReplaceText2.replace("<housenumber>",enterhousenum).replace("<street>",enterstreet);
 	System.out.println(ReplaceText2);
 	System.out.println(answerfinal);
 	answerfinal=in.nextLine();
-	System.out.println(answerfinal+ "Goodbye");
+	System.out.println(answerfinal + "Goodbye");
 	
 	
 	

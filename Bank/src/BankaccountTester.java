@@ -18,7 +18,7 @@ System.out.println("Enter how much you would like to deposit:");
 double depositamount= in.nextDouble();
 myBankAccount.deposit(depositamount);
 
-System.out.println(startBal);
+System.out.println(myBankAccount.getBalance());
 
 
 

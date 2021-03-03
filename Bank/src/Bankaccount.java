@@ -42,7 +42,7 @@ public class Bankaccount {
 	      
 		   }
 		   else {
-			  System.err.println("Transaction cancelled due to insufficient funds");
+			  System.err.println("Insufficient Fund to support withdrawal");
 			 
 			 	
 			 		   }

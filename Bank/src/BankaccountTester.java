@@ -3,8 +3,9 @@ public class BankaccountTester {
 
 public static void main(String[] args) {
 	Scanner in = new Scanner(System.in);
-	System.out.println("Enter Balance amount and Interest Rate:");
+	System.out.println("Enter amount to start the account:");
 	double startBal= in.nextDouble();
+	System.out.println("Enter Interest rat for this account:");
 	double InterstPct= in.nextDouble();
 	
 	
@@ -15,8 +16,8 @@ public static void main(String[] args) {
  	
  	 
  	 
- 	System.out.println("Created new account with:"+startBal); 
- 	System.out.println("and the interest rate of:" + InterstPct);
+ 	System.out.println("Created new account with:" + startBal); System.out.println("and intrest rate of"  +InterstPct);
+ 	
  	
  	System.out.println("Enter how much you would like to deposit:");
  	double depositamount= in.nextDouble();

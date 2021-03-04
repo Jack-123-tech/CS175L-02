@@ -25,7 +25,7 @@ public class Bankaccount {
 	   public void deposit(double amount)
 	   {
 	      balance = balance + amount;
-	      System.out.println("Deposited:" + amount);
+	      System.out.println("\t Deposited:" + amount);
 	   }
 
 	   /**
@@ -38,11 +38,11 @@ public class Bankaccount {
 		   if(amount<=balance) {
 		  
 	      balance = balance - amount;
-	      System.out.println("Withdrew:"+ amount);
+	      System.out.println("\t Withdrew:"+ amount);
 	      
 		   }
 		   else {
-			  System.err.println("Insufficient Fund to support withdrawal");
+			  System.err.println("\t Insufficient Fund to support withdrawal");
 			 
 			 	
 			 		   }
@@ -51,7 +51,7 @@ public class Bankaccount {
 		   
 		 double  Interest = balance* InterestPct;
 		   balance= balance+ Interest;
-		   System.out.println("Interest:"+Interest);
+		   System.out.println("\t Interest:"+Interest);
 	   }
 	   
 	  

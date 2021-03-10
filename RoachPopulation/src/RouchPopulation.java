@@ -15,7 +15,7 @@ public void setRoach(double startsize) {
 
 
 public RouchPopulation(double startsize){
-	population= startsize;
+	this.population= startsize;
 
 }
 
@@ -30,9 +30,10 @@ public RouchPopulation(double startsize){
 	
 	
 	public double spray(double population,double percent) {
-		double deathpop = population *(1-percent); 
-      //  population = population - deathpop;  
-		return deathpop;
+		//double deathpop = population *(1-percent); 
+      //  population = population - deathpop; 
+		population=population-(population*percent);
+		return population;
 	
 }
 	//public double getspray() {

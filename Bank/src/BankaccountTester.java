@@ -23,7 +23,16 @@ public static void main(String[] args) {
  	double depositamount= in.nextDouble();
  	
  	myBankAccount.deposit(depositamount);
- 	
+ 	while (in.hasNextDouble())
+	{int months = 0;
+		double numb = in.nextDouble();
+		//System.out.println(numb);
+		while (numb< 1500)
+		{myBankAccount.calcInterest();
+			months++;
+			
+		}
+		System.out.println(months);
  	System.out.println("Enter how much you would like to withdraw:");
  	double withdrawamount= in.nextDouble();
  	in.nextLine();
@@ -48,9 +57,9 @@ public static void main(String[] args) {
  
  	
 
+	}}}
+
+	
 
 
-	}
 
-
-}
